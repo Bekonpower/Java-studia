@@ -10,7 +10,7 @@ import domyslny.TypyDanych;
 
 /**
  *
- * @author Rafał Dębiński
+ * @author Bekon
  */
 public class Laboratorium2 {
 

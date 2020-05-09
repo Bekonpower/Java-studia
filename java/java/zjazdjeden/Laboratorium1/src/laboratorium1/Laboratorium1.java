@@ -7,6 +7,14 @@ package laboratorium1;
 
 import dane.Magazyn;
 
+/*• Czy można dodać jakikolwiek kod poza klasą?
+* Nie. Można napisać kod w klasie main, ale main to też klasa.
+*
+*W kodzie pojawiają się new, czemu nie ma delete ?
+*Usuwaniem obiektów w javie zajmuje się garbage collector.
+
+*/
+
 /**
  *
  * @author Bekon
