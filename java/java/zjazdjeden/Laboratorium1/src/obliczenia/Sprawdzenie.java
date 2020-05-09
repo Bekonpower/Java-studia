@@ -4,20 +4,20 @@
  * and open the template in the editor.
  */
 package obliczenia;
-
 import dane.Dostep;
-
+import java.lang.System;
 /**
  *
  * @author Bekon
  */
 public class Sprawdzenie {
-    private final Dostep dostep = new Dostep();
-    
-    boolean czyDanePoprawne(){
+    public final Dostep dostep = new Dostep();
+
+    public boolean czyDanePoprawne(){
         if(dostep.get_wspolczynnik1()>0 && dostep.get_wspolczynnik2()>0)
             return true;
-        else
-            return false;
+        else{System.out.println("Złe dane, wprowadź jeszcze raz!");
+        return false;
     }
+    };
 }

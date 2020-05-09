@@ -21,7 +21,9 @@ public class Przeliczenia {
     private Dostep d = new Dostep();
     
     public double obliczenie1(double x, double y){
-        return d.get_wspolczynnik1()*x + d.get_wspolczynnik2()*y;
+        double zwrot = d.get_wspolczynnik1()*x + d.get_wspolczynnik2()*y;
+        Magazyn.indeks1 = (int)zwrot;
+        return zwrot;
     }
     
     private double zmienZnak(double z){
@@ -30,6 +32,9 @@ public class Przeliczenia {
     
     public double obliczenie2(double x){
         x = zmienZnak(x);
-        return Magazyn.C*x;
+        double zwrot = Magazyn.C*x;
+        Magazyn.indeks2 = (int)zwrot;
+        return zwrot;
     }
+
 }

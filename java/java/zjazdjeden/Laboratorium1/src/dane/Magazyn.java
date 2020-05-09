@@ -15,9 +15,11 @@ public class Magazyn {
     public static double C = 299792458;
     static double wspolczynnik1 = 0.1, wspolczynnik2 = 2.0;
     private static double wynik1, wynik2, wynik3;
-    public int indeks1, indeks2, indeks3;
+    public static int indeks1;
+	public static int indeks2;
+	public static int indeks3;
 
-    private Magazyn() {
+    public Magazyn() {
 
     }
 
@@ -33,15 +35,15 @@ public class Magazyn {
         wynik3 = wynik;
     }
 
-    public static double getWunik1() {
+    public static double getWynik1() {
         return wynik1;
     }
 
-    public static double getWunik2() {
+    public static double getWynik2() {
         return wynik1;
     }
 
-    public static double getWunik3() {
+    public static double getWynik3() {
         return wynik1;
     }
 
