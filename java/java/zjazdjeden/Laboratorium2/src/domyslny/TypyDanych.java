@@ -1,16 +1,15 @@
 package domyslny;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+import java.util.Scanner;
 
 /**
  *
  * @author Bekon
  */
 public class TypyDanych {
+
+    private static String x;
+    private static String y;
 
     public static void typInteger() {
 
@@ -110,10 +109,40 @@ public class TypyDanych {
         
         String [] wyrazy = tekstCaly1.split(" ");
         for(int i=0; i<wyrazy.length; i++) System.out.println(wyrazy[i]);
+
+        final Scanner scanner = new Scanner(System.in);
+        System.out.print("Wyraz pierwszy = ");
+        x = scanner.nextLine();
+        System.out.print("Wyraz drugi = ");
+        y = scanner.nextLine();
+
+        if(x.compareTo(y)==0) System.out.println("TAK, są takie same");
+        else System.out.println("Są różne");
+
+        if(x.compareToIgnoreCase(y)==0) System.out.println("Są takie same pomijając wielkość znaków");
+        else System.out.println("Są różne pomijając wielkość znaków");
     }
     
+    public static void typDouble(){
+
+        Double cyfra1 = 5.00;
+        Double cyfra2 = 5.4000001;
+        Double cyfra3 = 5.;
+        Double cyfra4 = 5.00;
+
+        System.out.println(Double.compare(cyfra1, cyfra2));
+        System.out.println(cyfra1.intValue());
+
+        if(cyfra1==cyfra3) System.out.println("TAK");
+        else System.out.println("NIE");
+
+        if(cyfra1.compareTo(cyfra4)==0) System.out.println("TAK");
+        else System.out.println("NIE");
+    }
+
     public void start(){
         this.typInteger();
         this.typString();
+        this.typDouble();
     } 
 }
